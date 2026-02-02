@@ -2,85 +2,11 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <title>Frokosttilmelding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .box {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      width: 100%;
-      max-width: 400px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    select, button {
-      width: 100%;
-      padding: 12px;
-      margin-top: 15px;
-      font-size: 16px;
-    }
-
-    button {
-      background: #0078d4;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #005fa3;
-    }
-  </style>
+  <title>Frokost</title>
 </head>
-
 <body>
-
-  <div class="box">
-    <h2>Tilmeld frokost</h2>
-
-    <label for="firma">Vælg firma</label>
-
-    <select id="firma">
-      <option value="">-- vælg --</option>
-      <option value="Firma A">Firma A</option>
-      <option value="Firma B">Firma B</option>
-      <option value="Firma C">Firma C</option>
-    </select>
-
-    <button onclick="tilmeld()">Godkend</button>
-  </div>
-
-  <script>
-    function tilmeld() {
-      const firma = document.getElementById("firma").value;
-
-      if (!firma) {
-        alert("Vælg venligst et firma");
-        return;
-      }
-
-      // ⬇️ INDSÆT DIT MICROSOFT FORMS LINK HER ⬇️
-      const formsLink =
-        "INDSÆT_DIT_FORUDFYLDTE_FORMS_LINK_HER" +
-        encodeURIComponent(firma);
-
-      window.location.href = formsLink;
-    }
-  </script>
-
+  <h1>Frokosttilmelding</h1>
+  <p>Hvis du kan se dette, virker det 🎉</p>
 </body>
 </html>
+
